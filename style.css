@@ -1,0 +1,159 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7ff;
+}
+
+/* Sidebar */
+
+.sidebar{
+    min-height:100vh;
+    background:linear-gradient(180deg,#6C63FF,#4B7BEC);
+    color:white;
+    padding:25px;
+}
+
+.sidebar h2{
+    font-weight:700;
+}
+
+.sidebar .nav-link{
+    color:white;
+    font-size:17px;
+    margin:12px 0;
+    padding:12px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active{
+    background:rgba(255,255,255,.2);
+    transform:translateX(5px);
+}
+
+/* Main */
+
+h1{
+    font-weight:700;
+    color:#333;
+}
+
+/* Input */
+
+.input-group input{
+    height:55px;
+    border-radius:12px 0 0 12px;
+}
+
+.input-group .btn{
+    border-radius:0 12px 12px 0;
+    background:#6C63FF;
+    border:none;
+    padding:0 25px;
+}
+
+.input-group .btn:hover{
+    background:#574bdb;
+}
+
+/* Cards */
+
+.card{
+    border:none;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+}
+
+.card i{
+    margin-bottom:10px;
+}
+
+.card h3{
+    font-weight:700;
+}
+
+/* Task List */
+
+.list-group-item{
+    border:none;
+    padding:18px;
+    transition:.3s;
+}
+
+.list-group-item:hover{
+    background:#eef2ff;
+}
+
+.btn-success,
+.btn-danger{
+    border-radius:10px;
+    margin-left:5px;
+}
+
+/* Buttons */
+
+.btn-success{
+    background:#22c55e;
+    border:none;
+}
+
+.btn-danger{
+    background:#ef4444;
+    border:none;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#6C63FF;
+    border-radius:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.sidebar{
+    min-height:auto;
+}
+
+h1{
+    text-align:center;
+}
+
+.card{
+    margin-bottom:20px;
+}
+
+.input-group{
+    flex-direction:column;
+}
+
+.input-group input{
+    border-radius:12px;
+    margin-bottom:10px;
+}
+
+.input-group .btn{
+    border-radius:12px;
+}
+
+}
